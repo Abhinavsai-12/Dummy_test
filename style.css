@@ -1,0 +1,257 @@
+
+        /* Media Queries for 480px */
+        @media screen and (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            
+            .logo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .menu-btn {
+                display: block;
+                font-size: 30px;
+                color: white;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .navcls {
+                display: none; /* Initially hidden */
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                margin-top: 10px;
+            }
+            
+            .navcls.active {
+                display: flex; /* Shown when active */
+            }
+        
+        
+        
+        
+        
+        
+        
+               /* General adjustments */
+               .home {
+                height: auto;
+                width: 100vw;
+                padding-bottom: 20px;
+            }
+        
+            .homevideo video {
+                width: 100vw;
+                height: auto;
+            }
+        
+            .home1 {
+                top: 30%; /* Adjust vertical alignment for smaller screens */
+                font-size: 16px;
+            }
+        
+            .home1 h6 {
+                font-size: 18px;
+            }
+        
+            .home1 h1 {
+                font-size: 36px;
+            }
+        
+            .h1 span {
+                font-size: 36px;
+            }
+        
+            .btn1a {
+                padding: 10px 15px;
+                font-size: 12px;
+            }
+        
+            /* Adjust home2 container */
+            .home2 {
+                flex-direction: column; /* Stack the cards vertically */
+                align-items: center;
+                top: auto;
+                left: auto;
+                margin-top: 20px;
+            }
+        
+            /* Adjust home2a, home2b, home2c for vertical stacking */
+            .home2a,
+            .home2b,
+            .home2c {
+                width: 90%; /* Full-width cards */
+                margin: 15px 0;
+                height: auto; /* Auto adjust height */
+            }
+        
+            .home2a:hover,
+            .home2b:hover,
+            .home2c:hover {
+                height: auto; /* Maintain natural height on hover */
+                margin-top: 0;
+            }
+        
+            /* Adjust icon and text */
+            .ic1,
+            .ic2,
+            .ic3 {
+                width: 24px; /* Smaller icons */
+                height: 24px;
+            }
+        
+            .sp1,
+            .sp2,
+            .sp3 {
+                font-size: 18px;
+            }
+        
+            .p1,
+            .p2,
+            .p3 {
+                font-size: 14px;
+                padding: 10px;
+            }
+        
+            /* Adjust links */
+            .home2a a,
+            .home2b a,
+            .home2c a {
+                font-size: 14px;
+            }
+        
+            /* Ensure hover effects are optimized */
+            .home2a:hover .p1,
+            .home2b:hover .p2,
+            .home2c:hover .p3 {
+                margin-top: 5px;
+            }
+        
+            .home2a:hover a,
+            .home2b:hover a,
+            .home2c:hover a {
+                margin-top: 5px;
+            }
+        
+        
+
+
+
+            /* Section2 */
+            
+
+                /* Section 2  */
+                .s2{
+                    background-image: url(bgimgs/choosing-bg.jpg);
+                    width:100%;
+                    height:100vh;
+                }
+                .s21a{
+                    width:100%;
+                    height:100vh;
+                }
+                .s21,.s22,.s23{
+                    width:100%;
+                    height:100vh;
+                    display: flex;
+                    flex-direction:column;
+                    margin-top:20px;
+                }
+                .s21 img{
+                    width:100px;
+                    height:100px;
+                }
+                .s22 img{
+                    width:10px;
+                    height:100px; 
+                }
+                .s23 img{
+                    width:100px;
+                    height:100px; 
+                }
+                .s21a, .s21b, .s21c{
+                    color: white;
+                    width:100%; 
+                }
+                .s21b h3{
+                    color: white;
+                    font-size:32px;
+                    margin-left:20px;
+                    font-weight:600;
+                }
+                .s21c h3{
+                    color: white;
+                    font-size:36px;
+                    margin-left:20px;
+                    font-weight:600;
+                }
+                .s21b p{
+                    color:white;
+                    margin-left:20px;
+                    margin-top:20px;
+                    font-size:14px;
+                }
+                .s21c p{
+                    color:white;
+                    margin-left:20px;
+                    font-size:14px;
+                }
+            
+            
+            
+            
+            
+            
+            
+            
+
+                .s31{
+
+                    display: flex;
+                    flex-direction: column;
+                }
+                .s31 h1{
+                    width:100%;
+                    padding:20px 40px 20px 25px;
+                    font-size:28px;
+                }
+                .formbox{
+                    width:380px;
+                    height:420px;
+                    border: 2px solid rgba(255, 255, 255, 0.55) ;
+                    background-color: rgba(145, 145, 145, 0.146);
+                }
+                .formbox p{ 
+                    font: size 22px;
+                    padding: 15px;
+                }
+                .forms{
+                    margin-top: 25px;
+                }
+                .btn{
+                    color: white;
+                    padding:5px;
+                    background-color: #f5a425;
+                    margin-top: 15px;
+                    margin-left: 40%;
+                }
+            
+            
+                .s4{
+                    display:none;
+                }
+            
+            
+            
+
+                
+
+        }
