@@ -252,6 +252,117 @@
             
             
 
+                .s51 {
+                    height: auto; /* Allow the section to adjust height dynamically */
+                    flex-direction: column; /* Stack the elements vertically */
+                    padding: 20px; /* Add padding for better spacing on small screens */
+                }
+            
+                /* Content adjustments */
+                .s51a {
+                    width: 100%; /* Full width for text content */
+                    text-align: center; /* Center align for better readability */
+                }
+            
+                .s5a1, .s5a2, .s5a3, .s5a4, .s5a5 {
+                    font-size: 14px; /* Reduce font size for smaller screens */
+                    line-height: 1.4em; /* Adjust line height for better readability */
+                    padding: 10px; /* Add consistent padding */
+                }
+            
+                .s5a2, .s5a3 {
+                    font-size: 20px; /* Adjust heading sizes */
+                }
+            
+                .s5a4, .s5a5 {
+                    font-size: 12px; /* Adjust paragraph font size */
+                }
+            
+                /* External button adjustments */
+                .external {
+                    font-size: 12px; /* Reduce button font size */
+                    padding: 10px 15px; /* Adjust padding for smaller button */
+                    margin-top: 15px; /* Add spacing above the button */
+                    display: inline-block; /* Ensure proper button alignment */
+                }
+            
+                /* Thumbnail adjustments */
+                .thumbnail-container {
+                    width: 100%; /* Make thumbnail container full width */
+                    text-align: center; /* Center the thumbnail */
+                    margin-top: 20px; /* Add spacing above thumbnail */
+                }
+            
+                .vt {
+                    width: 80%; /* Resize the video thumbnail */
+                    height: auto; /* Maintain aspect ratio */
+                    margin: 0 auto; /* Center align the thumbnail */
+                }
+
                 
+
+
+                 /* Section 6 */
+    .s6 {
+        height: auto; /* Allow dynamic height */
+        background-size: cover; /* Ensure background scales well */
+        padding: 20px; /* Add padding for small devices */
+    }
+
+    .s6 h3 {
+        width: auto; /* Adjust width to fit content */
+        margin-left: auto; /* Center align */
+        margin-right: auto;
+        font-size: 18px; /* Reduce font size */
+        padding: 10px; /* Add padding */
+    }
+
+    .s61 {
+        flex-direction: column; /* Stack form and map vertically */
+        align-items: center; /* Center align the items */
+        gap: 20px; /* Add spacing between form and map */
+    }
+
+    .formbox2 {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow dynamic height */
+        padding: 20px; /* Add padding inside the form box */
+    }
+
+    .fname,
+    .fmail {
+        width: 100%; /* Full width for inputs */
+        margin: 10px 0; /* Add vertical margin */
+    }
+
+    .fta {
+        width: 100%; /* Full width for textarea */
+        margin: 10px 0; /* Add vertical margin */
+    }
+
+    .fbtn {
+        width: 100%; /* Full width for button */
+        margin: 10px 0; /* Add vertical margin */
+    }
+
+    .s6img {
+        width: 90%; /* Adjust map width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Footer */
+    footer {
+        height: auto; /* Allow dynamic height */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    footer p {
+        font-size: 12px; /* Reduce font size */
+        line-height: 1.5em; /* Improve readability */
+    }
+
+    footer a {
+        font-size: 12px; /* Reduce link font size */
+    }
 
         }
