@@ -21,6 +21,7 @@
         }
         /* Header Section */
         /* Header Section */
+                /* Base Styles */
         header {
             height: 8vh;
             width: 100%;
@@ -36,7 +37,8 @@
             justify-content: space-between;
             align-items: center;
             background-color: rgba(22, 34, 57, 0.95);
-            padding: 10px 20px;
+            padding: 10px;
+            padding-top: 15px;
         }
 
         .gs {
@@ -73,6 +75,7 @@
         .navcls li a:hover {
             border: 2px solid #f5a425;
         }
+
 
 
 
@@ -635,7 +638,7 @@
                 position: absolute;
                 top: 8vh; /* Below the navbar */
                 right: 0;
-                width: 100%; /* Full width */
+                width: 100vw; /* Full width */
                 background-color: rgba(22, 34, 57, 0.95);
                 padding: 10px 0;
                 z-index: 10;
@@ -655,12 +658,11 @@
                 font-size: 28px;
                 cursor: pointer;
                 position: absolute;
-                right: -10px; /* Align to the right corner */
+                right: 10px; /* Align to the right corner */
                 top: 50%;
                 transform: translateY(-50%);
                 border: 2px solid #f5a425;
-                padding: 10px;
-
+                padding:10px;
             }
 
             /* Toggle navigation menu */
@@ -670,12 +672,9 @@
 
 
 
-
-
-
         /* Home Section */
         .home {
-            margin-top: 10px;
+            margin-top:0;
             height: 100vh;
             width: 100vw;
             background-color: rgba(38, 38, 72, 0.701);
@@ -959,106 +958,6 @@
 </head>
 <body>
     <!-- Nav Bar Using header Tag -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <style>
-        /* Base Styles */
-        header {
-            height: 8vh;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 12;
-        }
-
-        .navbar {
-            width: 100%;
-            height: 10vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(22, 34, 57, 0.95);
-            padding: 10px;
-            padding-top: 15px;
-        }
-
-        .gs {
-            text-decoration: none;
-            color: white;
-            font-size: 38px;
-            font-weight: 600;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .grade {
-            color: #f5a425;
-            padding-right: 10px;
-        }
-
-        .navcls {
-            display: flex;
-            gap: 25px;
-            font-size: 18px;
-            margin-right: 25px;
-        }
-
-        .navcls li {
-            list-style-type: none;
-        }
-
-        .navcls li a {
-            color: white;
-            text-decoration: none;
-            font-family: 'Arial', sans-serif;
-            padding: 10px;
-        }
-
-        .navcls li a:hover {
-            border: 2px solid #f5a425;
-        }
-
-        /* Responsive Styles for 480px */
-        @media screen and (max-width: 480px) {
-            .navcls {
-                display: none; /* Hide navigation links */
-                flex-direction: column;
-                background-color: rgba(22, 34, 57, 0.95); /* Dropdown background */
-                position: absolute;
-                top: 8vh; /* Below the navbar */
-                right: 0;
-                width: 100%; /* Full width */
-                padding: 10px;
-                z-index: 10;
-            }
-
-            .navcls li {
-                text-align: center;
-                margin: 10px 0; /* Space between items */
-            }
-
-            .menu-icon {
-                display: flex; /* Show the menu icon */
-                color: white;
-                font-size: 28px;
-                cursor: pointer;
-                margin-right: 20px; /* Position to the right */
-                align-items: center;
-            }
-
-            /* Show navcls when active */
-            .navbar.active .navcls {
-                display: flex;
-            }
-        }
-    </style>
-</head>
-<body>
-
-
     <!-- Navbar -->
     <header>
         <div class="navbar" onclick="document.querySelector('.navbar').classList.toggle('active')">
