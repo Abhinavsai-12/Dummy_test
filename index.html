@@ -31,6 +31,7 @@
             height: 10vh;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: rgba(22, 34, 57, 0.95);
             padding: 10px;
             padding-top: 15px; 
@@ -604,328 +605,334 @@
 
 
         /* Media Queries foe Responsive Pages */
-        @media screen and (width<480px){
-                .s4{
-                    display:none;
+    @media screen and (width<480px){
+            .s4{
+                display:none;
+            }
+    }
+    @media screen and (max-width: 480px) {
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Header Section */
+            .navcls {
+                display: none; /* Hide navigation links */
+                flex-direction: column;
+                background-color: rgba(22, 34, 57, 0.95); /* Dropdown background */
+                position: absolute;
+                top: 8vh; /* Below the navbar */
+                right: 0;
+                width: 100%; /* Full width */
+                padding: 10px;
+                z-index: 10;
+            }
+
+            .navcls li {
+                text-align: center;
+                margin: 10px 0; /* Space between items */
+            }
+
+            .menu-icon {
+                display: flex; /* Show the menu icon */
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                margin-right: 20px; /* Position to the right */
+                align-items: center;
+            }
+
+            /* Show navcls when active */
+            .navbar.active .navcls {
+                display: flex;
+            }
+
+
+
+
+
+
+        /* Home Section */
+        .home {
+            margin-top: 10px;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(38, 38, 72, 0.701);
+        }
+
+        .homevideo video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            z-index: -3;
+        }
+
+        .home1 {
+            position: absolute;
+            top: 15%;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .home1 h6 {
+            /* display: none; */
+            font-size: 16px;
+            margin-top: 150px;
+        
+        }
+
+        .home1 h1 {
+            font-size: 24px;
+            margin-top: 50px;
+        }
+
+        .btn1 {
+            margin-top: 2vh;
+        }
+
+        .btn1a {
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+
+        .home2 {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: -100px;
+        }
+
+        .home2a,
+        .home2b,
+        .home2c {
+            height: 45px;
+            width: 200px;
+            margin: 10px auto;
+            border: 2px solid black;
+            background-color: rgb(3, 3, 50);
+            text-align: center;
+        }
+
+        .sp1,
+        .sp2,
+        .sp3 {
+            font-size: 14px;
+        }
+
+        .p1,
+        .p2,
+        .p3 {
+            font-size: 12px;
+        }
+
+        .home2a a,
+        .home2b a,
+        .home2c a {
+            font-size: 10px;
+        }
+
+
+
+
+
+        /* Section 2 */
+        .s2 {
+            background-image: url(bgimgs/choosing-bg.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
+        .s21 img,
+        .s22 img,
+        .s23 img {
+            width: 75vh;
+            height: 75vh;
+        }
+
+        .i2{
+            width: 70vh;
+        }
+
+        .s21b h3,
+        .s21c h3 {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .s21b p,
+        .s21c p {
+            font-size: 14px;
+            margin-left: 10px;
+            text-align: justify;
+        }
+
+
+
+        /* Section 3 */
+        .s3{
+            height: 92vh;
+        }
+        .s31 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .s31 h1 {
+            width: 85vw;
+            font-size: 24px;
+            padding: 15px;
+        }
+
+        .formbox {
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            background-color: rgba(145, 145, 145, 0.146);
+        }
+
+        .formbox p {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .forms {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 5px;
+            margin: 10px auto;
+            display: block;
+            font-size: 12px;
+            background-color: #f5a425;
+            color: white;
+        }
+
+
+
+        /* Section 5 */
+        .s51 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .s51a{
+                    margin-top:25px ;
+                    width:85%;
                 }
+            
+                .s5a1{
+                    display: none;
+                }
+            
+        .s5a2,
+        .s5a3 {
+            font-size: 22px;
+            padding: 2px;
         }
 
-        @media screen and (max-width: 480px) {
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Header Section */
-header {
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 12;
-}
-
-.navbar {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(22, 34, 57, 0.95);
-    padding: 5px;
-    padding-top: 10px;
-}
-
-.logo a {
-    font-size: 20px;
-}
-
-.gs {
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.grade {
-    color: #f5a425;
-}
-
-.navcls {
-    display: none;
-}
-
-/* Home Section */
-.home {
-    margin-top: 10px;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(38, 38, 72, 0.701);
-}
-
-.homevideo video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    z-index: -3;
-}
-
-.home1 {
-    position: absolute;
-    top: 15%;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.home1 h6 {
-    display: none;
-}
-
-.home1 h1 {
-    font-size: 24px;
-    margin-top: 50px;
-}
-
-.btn1 {
-    margin-top: 2vh;
-}
-
-.btn1a {
-    padding: 8px 12px;
-    font-size: 12px;
-}
-
-.home2 {
-    position: absolute;
-    z-index: 2;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: -100px;
-}
-
-.home2a,
-.home2b,
-.home2c {
-    height: 45px;
-    width: 200px;
-    margin: 10px auto;
-    border: 2px solid black;
-    background-color: rgb(3, 3, 50);
-    text-align: center;
-}
-
-.sp1,
-.sp2,
-.sp3 {
-    font-size: 14px;
-}
-
-.p1,
-.p2,
-.p3 {
-    font-size: 12px;
-}
-
-.home2a a,
-.home2b a,
-.home2c a {
-    font-size: 10px;
-}
-
-/* Section 2 */
-.s2 {
-    background-image: url(bgimgs/choosing-bg.jpg);
-    width: 100%;
-    height: 100vh;
-}
-
-.s21 img,
-.s22 img,
-.s23 img {
-    width: 75vh;
-    height: 75vh;
-}
-
-.i2{
-    width: 70vh;
-}
-
-.s21b h3,
-.s21c h3 {
-    font-size: 24px;
-    margin-left: 10px;
-}
-
-.s21b p,
-.s21c p {
-    font-size: 14px;
-    margin-left: 10px;
-    text-align: justify;
-}
-
-
-
-/* Section 3 */
-.s3{
-    height: 92vh;
-}
-.s31 {
-    display: flex;
-    flex-direction: column;
-}
-
-.s31 h1 {
-    width: 85vw;
-    font-size: 24px;
-    padding: 15px;
-}
-
-.formbox {
-    width: 300px;
-    height: 350px;
-    border: 2px solid rgba(255, 255, 255, 0.55);
-    background-color: rgba(145, 145, 145, 0.146);
-}
-
-.formbox p {
-    font-size: 14px;
-    padding: 10px;
-}
-
-.forms {
-    margin-top: 20px;
-}
-
-.btn {
-    padding: 5px;
-    margin: 10px auto;
-    display: block;
-    font-size: 12px;
-    background-color: #f5a425;
-    color: white;
-}
-
-
-
-/* Section 5 */
-.s51 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.s51a{
-            margin-top:25px ;
-            width:85%;
+        .s5a4 {
+            font-size: 14px;
+            padding: 2px;
+            text-align: justify;
         }
 
-        .s5a1{
-            display: none;
+        .s5a5{
+            text-align: justify;
+            /* display: none; */
         }
 
-.s5a2,
-.s5a3 {
-    font-size: 22px;
-    padding: 2px;
-}
+        .external {
+            font-size: 12px;
+            padding: 8px;
+            margin-top: -15px;
+        }
 
-.s5a4 {
-    font-size: 14px;
-    padding: 2px;
-    text-align: justify;
-}
+        .thumbnail-container {
+            width: 220px;
+            height: 220px;
+        }
 
-.s5a5{
-    text-align: justify;
-    /* display: none; */
-}
-
-.external {
-    font-size: 12px;
-    padding: 8px;
-    margin-top: -15px;
-}
-
-.thumbnail-container {
-    width: 220px;
-    height: 220px;
-}
-
-.vt {
-    width: 220px;
-    height: 220px;
-}
+        .vt {
+            width: 220px;
+            height: 220px;
+        }
 
 
 
-/* Section 6 */
-.s6 {
-    width: 100%;
-    height: auto;
-}
+        /* Section 6 */
+        .s6 {
+            width: 100%;
+            height: auto;
+        }
 
-.s61{
-    height: auto;
-}
+        .s61{
+            height: auto;
+        }
 
-.s6 h3 {
-    font-size: 14px;
-    width: 80vw;
-    text-align: center;
-    margin: 10px auto;
-    margin-top:25px;
-}
+        .s6 h3 {
+            font-size: 14px;
+            width: 80vw;
+            text-align: center;
+            margin: 10px auto;
+            margin-top:25px;
+        }
 
-.formbox2 {
-    width: 300px;
-    margin: 0 auto;
-}
+        .formbox2 {
+            width: 300px;
+            margin: 0 auto;
+        }
 
-.fname,
-.fmail,
-.fta {
-    width: 90%;
-    margin: 5%;
-}
+        .fname,
+        .fmail,
+        .fta {
+            width: 90%;
+            margin: 5%;
+        }
 
-.fta {
-    height: 150px;
-}
+        .fta {
+            height: 150px;
+        }
 
-.fbtn {
-    margin: 5%;
-    padding: 8px;
-    font-size: 12px;
-    width:60vw;
-}
+        .fbtn {
+            margin: 5%;
+            padding: 8px;
+            font-size: 12px;
+            width:60vw;
+        }
 
-.s6img {
-    width: 300px;
-    height: 200px;
-    margin: 10px auto;
-}
+        .s6img {
+            width: 300px;
+            height: 200px;
+            margin: 10px auto;
+        }
 
 
 
 
-/* Footer */
-footer {
-    height: auto;
-    padding: 10px;
-    background-color: rgba(11, 11, 54, 0.947);
-}
+        /* Footer */
+        footer {
+            height: auto;
+            padding: 10px;
+            background-color: rgba(11, 11, 54, 0.947);
+        }
 
-footer p {
-    font-size: 10px;
-    text-align: center;
-}
-}
+        footer p {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
 
 
 
@@ -937,13 +944,116 @@ footer p {
 </head>
 <body>
     <!-- Nav Bar Using header Tag -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        /* Base Styles */
+        header {
+            height: 8vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 12;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(22, 34, 57, 0.95);
+            padding: 10px;
+            padding-top: 15px;
+        }
+
+        .gs {
+            text-decoration: none;
+            color: white;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .grade {
+            color: #f5a425;
+            padding-right: 10px;
+        }
+
+        .navcls {
+            display: flex;
+            gap: 25px;
+            font-size: 18px;
+            margin-right: 25px;
+        }
+
+        .navcls li {
+            list-style-type: none;
+        }
+
+        .navcls li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            padding: 10px;
+        }
+
+        .navcls li a:hover {
+            border: 2px solid #f5a425;
+        }
+
+        /* Responsive Styles for 480px */
+        @media screen and (max-width: 480px) {
+            .navcls {
+                display: none; /* Hide navigation links */
+                flex-direction: column;
+                background-color: rgba(22, 34, 57, 0.95); /* Dropdown background */
+                position: absolute;
+                top: 8vh; /* Below the navbar */
+                right: 0;
+                width: 100%; /* Full width */
+                padding: 10px;
+                z-index: 10;
+            }
+
+            .navcls li {
+                text-align: center;
+                margin: 10px 0; /* Space between items */
+            }
+
+            .menu-icon {
+                display: flex; /* Show the menu icon */
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                margin-right: 20px; /* Position to the right */
+                align-items: center;
+            }
+
+            /* Show navcls when active */
+            .navbar.active .navcls {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Navbar -->
     <header>
-        <div class="navbar">
+        <div class="navbar" onclick="document.querySelector('.navbar').classList.toggle('active')">
             <div class="logo">
                 <a href="#" class="gs">
                     <span class="grade">GRAD</span>SCHOOL
                 </a>
             </div>
+            <!-- Menu Icon -->
+            <div class="menu-icon">&#9776;</div>
             <nav>
                 <ul class="navcls">
                     <li><a href="#home">HOME</a></li>
@@ -955,6 +1065,9 @@ footer p {
             </nav>
         </div>
     </header>
+</body>
+</html>
+
 
 
 
