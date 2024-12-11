@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+
         *{
             box-sizing: border-box;
             margin: 0;
@@ -19,51 +20,57 @@
             font-family: Arial, sans-serif;
         }
         /* Header Section */
-        header{
-            height:8vh;
+        /* Header Section */
+        header {
+            height: 8vh;
             width: 100%;
             position: fixed;
             top: 0;
             z-index: 12;
         }
-        .navbar{
+
+        .navbar {
             width: 100%;
             height: 10vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: rgba(22, 34, 57, 0.95);
-            padding: 10px;
-            padding-top: 15px; 
+            padding: 10px 20px;
         }
-        .gs{
+
+        .gs {
             text-decoration: none;
             color: white;
             font-size: 38px;
             font-weight: 600;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
         }
-        .grade{
-            color: #f5a425; 
-            padding-right:10px;
+
+        .grade {
+            color: #f5a425;
+            padding-right: 10px;
         }
-        .navcls{
+
+        .navcls {
             display: flex;
             gap: 25px;
             font-size: 18px;
-            padding-top:10px ;
             margin-right: 25px;
         }
+
         .navcls li {
             list-style-type: none;
         }
-        .navcls li a{
-            color:white;
+
+        .navcls li a {
+            color: white;
             text-decoration: none;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
             padding: 10px;
         }
-        .navcls li a:hover{
+
+        .navcls li a:hover {
             border: 2px solid #f5a425;
         }
 
@@ -621,34 +628,43 @@
 
 
         /* Header Section */
+
         .navcls {
-                display: none; /* Hide navigation links */
+                display: none;
                 flex-direction: column;
-                background-color: rgba(22, 34, 57, 0.95); /* Dropdown background */
                 position: absolute;
                 top: 8vh; /* Below the navbar */
                 right: 0;
                 width: 100%; /* Full width */
-                padding: 10px;
+                background-color: rgba(22, 34, 57, 0.95);
+                padding: 10px 0;
                 z-index: 10;
             }
 
             .navcls li {
                 text-align: center;
-                margin: 10px 0; /* Space between items */
+                margin: 10px 0;
             }
 
+            /* Menu Icon */
             .menu-icon {
-                display: flex; /* Show the menu icon */
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
                 color: white;
                 font-size: 28px;
                 cursor: pointer;
-                align-items: center;
-                padding-right:220px;
-                margin-right: 10vw; /* Adjusted padding to position the icon */
+                position: absolute;
+                right: 20px; /* Align to the right corner */
+                top: 50%;
+                transform: translateY(-50%);
+                border: 2px solid #f5a425;
+                padding: 10px;
+                margin-left: 20%;
+
             }
 
-            /* Show navcls when active */
+            /* Toggle navigation menu */
             .navbar.active .navcls {
                 display: flex;
             }
@@ -684,15 +700,13 @@
         }
 
         .home1 h6 {
-            /* display: none; */
-            font-size: 16px;
-            margin-top: 150px;
+            display: none;
         
         }
 
         .home1 h1 {
             font-size: 24px;
-            margin-top: 50px;
+            margin-top: 250px;
         }
 
         .btn1 {
@@ -706,6 +720,7 @@
 
         .home2 {
             position: absolute;
+            margin-left: 60px;
             z-index: 2;
             color: white;
             display: flex;
@@ -1054,7 +1069,8 @@
                 </a>
             </div>
             <!-- Menu Icon -->
-            <div class="menu-icon">&#9776;</div>
+            <div class="menu-icon" id="menu">&#9776;</div>
+
             <nav>
                 <ul class="navcls">
                     <li><a href="#home">HOME</a></li>
@@ -1066,8 +1082,6 @@
             </nav>
         </div>
     </header>
-</body>
-</html>
 
 
 
